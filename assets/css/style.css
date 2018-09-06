@@ -255,22 +255,30 @@ header div {
     display: flex;
     flex-flow: column wrap;
     max-width: 1180px;
-    height: 1530px;
     justify-content: center;
-    margin: 0 auto;
+    margin: 30px auto;
     
 }
 #div5 h3{
     font-family: 'MuseoSans100';
+    font-size: 30px;
 }
 #div5 p{
     font-family: 'MuseoSans300';
 }
 #div5 a{
     font-family: 'MuseoSans700';
+    text-decoration: none;
+    border: 2px solid #0050ff;
+    border-radius: 50px;
+    color: #0050ff;
+    padding: 5px 15px;
 }
 #div5 .post{
-    height: 510px;   
+    margin-bottom: 30px; 
+    border-top: 1px solid #eaeaea;
+    padding-top: 60px;
+    padding-bottom: 20px;
 }
 #div5 .post2{
     flex:50%;
@@ -286,11 +294,12 @@ header div {
 #div6 {
     display: flex;
     flex-flow: row wrap;
-    max-width: 1180px;
-    height: 1240px;
+    max-width: 100%;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eaeaea;
 }
 #div6 #contact{
     align-self: center;
@@ -298,11 +307,15 @@ header div {
     max-width: 100%;
     flex: 100%;
     font-family: 'MuseoSans100';
+    font-size: 25px;
+    color: #081f3f;
+    padding: 30px 0;
 }
 #div6 #first{
-    flex-basis: 730px;
-    height: 890px;
+    flex-basis: 60%;
     align-self: center;
+    background-color: white;
+    padding: 80px;
 }
 #div6 input{
     padding: 23px;
@@ -332,8 +345,7 @@ header div {
     height: 200px;
 }
 #div6 #second{
-    flex-basis: 450px;
-    height: 890px;
+    flex-basis: 40%;
     align-self: center;
     text-align: center;
 }
