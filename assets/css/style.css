@@ -85,6 +85,7 @@ header div {
     text-align: center;
     padding: 20px;
     text-decoration: none;
+    color: #293d59;
 }
 #menu2{
     display: flex;
@@ -108,6 +109,7 @@ header div {
     text-align: center;
     padding: 12px;
     text-decoration: none;
+    color: #293d59;
 }
 
 #login a{
@@ -297,9 +299,10 @@ header div {
     max-width: 100%;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 50px auto;
     background-color: #f7f7f7;
-    border-top: 1px solid #eaeaea;
+    border-top: 2px solid #eaeaea;
+    border-bottom: 2px solid #eaeaea;
 }
 #div6 #contact{
     align-self: center;
@@ -312,10 +315,14 @@ header div {
     padding: 30px 0;
 }
 #div6 #first{
-    flex-basis: 60%;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    height: 900px;
     align-self: center;
     background-color: white;
     padding: 80px;
+    border: 5px groove #eaeaea;
 }
 #div6 input{
     padding: 23px;
@@ -333,6 +340,19 @@ header div {
 #div6 label{
     font-family: 'MuseoSans700';
 }
+#first .acceptTerms{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+#first .checkBoxText {
+    display: inline-block;
+    color: #767676;
+    font-size: 15px;
+}
+#first .checkBox{
+    width: 7%;
+}
 #div6 input[type=submit]{ 
     border: 2px solid #004ffb;
     border-radius: 15px;
@@ -340,22 +360,40 @@ header div {
     width: 165px;
     text-align: center;
     font-family: 'MuseoSans700';
+    color: #004ffb;
+    font-size: 15px;
+    padding: 7px;
 }
 #div6 #message {
     height: 200px;
 }
 #div6 #second{
-    flex-basis: 40%;
+    display: flex;
+    width: 40%;
+    height: 900px;
+    flex-direction: column;
     align-self: center;
+    justify-content: center;
     text-align: center;
+    background-color: #004ffb;
+    color:white;
+    padding: 0 50px;
 }
 #second h4{
     font-family: 'MuseoSans100';
+    font-size: 25px;
 }
 #second a, h6, p {
     font-family: 'MuseoSans300';
 }
-
+#second #profile a{
+    text-decoration: none;
+}
+#second #profile{
+    background-color: white;
+    color: #081f3f;
+    padding: 20px;
+}
 #div7{
     display: flex;
     max-width: 100%;
@@ -390,6 +428,7 @@ footer {
 }
 footer a{
     text-decoration: none;
+    color: #0050ff;
 }
 
 footer #footer1{
