@@ -7,6 +7,7 @@
 # Header
 # Main
 # Footer
+# Responsive
 ***************/
 
 /***************
@@ -52,8 +53,9 @@ header {
 }
 
 header #menu {
-    flex-basis: 420px;
+    flex-basis: 520px;
     align-self: center;
+    display: flex;
 }
 
 header div {
@@ -90,7 +92,7 @@ header div {
 }
 #menu a:hover{
     border-bottom: 3px solid #004ffb;
-    padding-bottom: 50px;
+    padding-bottom: 58px;
 }
 #menu2{
     display: flex;
@@ -158,12 +160,14 @@ header div {
 
 
 #div1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     max-width: 1640px;
-    height: 380px;
     background-image: url("../images/family_img.jpg");
     background-size: cover;
     text-align: center;
-    padding: 70px 0;
+    padding: 50px 0;
     color: white;
     
 }
@@ -173,6 +177,9 @@ header div {
 }
 #div1 p{
     font-family: 'MuseoSans300';
+}
+#div1 img{
+    align-self: center;
 }
 #div2 {
     display: flex;
@@ -230,7 +237,6 @@ header div {
     flex-flow: row;
     justify-content: center;
     max-width: 980px;
-    height: 470px;
     margin: 0 auto;
 }
 
@@ -494,3 +500,140 @@ footer #footer1{
  .termsIcons{
     margin: 200px;
 }
+
+/*************
+# Responsive
+**************/
+
+@media screen and (max-width: 1024px){
+    #menu {
+        font-size: 15px;
+    }
+    #menu a:hover{
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and (max-width:991px){
+    #menu{
+        font-size: 9px;
+    }
+    #menu a:hover{
+        padding-bottom: 62px;
+    }
+    #submenu{
+        font-size: 12px;
+    }
+    #div1{
+        padding: 21px;
+    }
+
+    #div3 p{
+        font-size: 25px;
+    }
+    #div3 h4{
+        font-size: 14px;
+    }
+    #div3 a{
+        font-size: 13px;
+    }
+
+    #div4 #scope{
+        margin-left: 7px;
+    }
+
+    #div6 #profile a{
+        font-size: 13px;
+    }
+
+    #footer2 .termsIcons {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    #logo img{
+        height: 25px;
+    }
+    #login button{
+        width: 55px;
+        height: 30px;
+        font-size: 10px;
+    }
+
+    #div1 p{
+        font-size: 12px;
+    }
+    #div1 h1{
+        font-size: 21px;
+    }
+    #div1 img{
+        height: 25px;
+    }
+
+    #div2 div{
+        padding: 14px;
+        font-size: 13px;
+    }
+    #div2 img{
+        height: 30px;
+    }
+
+    #div3 p{
+        font-size: 15px;
+    }
+    #div3 h4{
+        font-size: 12px;
+    }
+    #div3 a{
+        font-size: 10px;
+        border-width: 8px; 
+    }
+
+    #div4 .images img {
+        float: none;
+        width: 100%;
+    }
+    #div4 #scope p{
+        font-size: 11px; 
+    }
+    #div4 #scope img{
+        height: 30px;
+    }
+    #div4 #scope a{
+        font-size: 9px;
+    }
+
+    #div5 p{
+        font-size: 13px;
+    }
+    #div5 h3{
+        font-size: 20px;
+    }
+    #div5 a{
+        font-size: 10px;
+    }
+    #div5 img{
+        height: 170px;
+    }
+
+    #div6 div{
+        flex-basis: 100%;
+    }
+    #div6 #second{
+       height: 500px;
+       padding: 25px;
+    }
+
+    #footer1 .column{
+        font-size: 10px;
+    }
+    #footer1 #logo2 img{
+        display: none;
+    }
+    #footer1 #storeIcons img{
+        height: 25px;
+    }
+}
+
