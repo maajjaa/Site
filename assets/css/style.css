@@ -452,7 +452,6 @@ footer #footer1{
     flex-wrap: wrap;
     justify-content: space-between; 
     padding: 50px 0;
-    margin-left: 50px;
 }
 #footer1 #logo2 img {
     height: 30px;
@@ -561,6 +560,19 @@ footer #footer1{
         height: 30px;
         font-size: 10px;
     }
+    #menu li{
+        float: none;
+        text-align: center;
+        padding: 4px;
+        font-size: 15px;
+        
+    }
+    #menu a:hover{
+        padding-bottom: 3px;
+    }
+    #submenu li{
+        float: right;
+    }
 
     #div1 p{
         font-size: 12px;
@@ -637,3 +649,110 @@ footer #footer1{
     }
 }
 
+@media screen and (max-width:479px){
+    
+    #menu a{
+        font-size: 10px;
+    }
+    #submenu a{
+        font-size: 9px;
+    }
+    #login button{
+        width: 45px;
+        height: 25px;
+    }
+
+    #div1{
+        padding: 10px 0;
+    }
+    #div1 h1{
+        font-size: 15px;
+    }
+    #div1 img{
+        height: 15px;
+    }
+    #div1 p{
+        font-size: 9px; 
+    }
+
+    #div2 {
+        flex-direction: column;
+     
+    }
+    #div2 div{
+        margin: 0 auto;
+        flex-basis: 0px;
+    }
+    #div2 div img{
+        float: left;
+        margin: 10px;
+    }
+    #div2 p{
+       margin: 15px;
+    }
+
+    #div3 {
+        flex-direction: column;
+    }
+    #div3 div{
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+    #div3 .usersstory p{
+        font-size: 14px;
+    }
+    #div3 .usersstory a{
+        margin: 15px;
+    }
+    
+    #div4 {
+        flex-direction: column;
+    }
+    #div4 #scope {
+        margin-bottom: 5px;
+    }
+
+    #div5{
+        margin: 0;
+        align-self:center;
+    }
+    #div5 .post {
+       
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    #div5 .post2{
+        float: none;
+        max-width:100%;
+        margin-bottom: 20px; 
+    }
+    #div5 .post3{
+        float: none;
+        max-width: 100%;
+       margin-bottom: 0;
+    }
+
+    #div6  #name  {
+        width: 100%;
+    }
+    #div6 #number{
+        width:100%;
+    }
+    #div6 .checkBoxText{
+        font-size: 10px;
+    }
+
+    #footer1 .column{
+        margin: auto;
+    }
+    #footer1 #profile {
+        flex-direction: row;
+        width: 100%; 
+        padding: 15px;
+    }
+
+    #footer2 a{
+        font-size: 10px;
+    }
+}
