@@ -552,26 +552,14 @@ footer #footer1{
 
 @media screen and (max-width:767px){
 
-    #logo img{
-        height: 25px;
-    }
-    #login button{
-        width: 55px;
-        height: 30px;
-        font-size: 10px;
+    header{
+        height: 80px;
     }
     #menu li{
-        float: none;
-        text-align: center;
-        padding: 4px;
-        font-size: 15px;
-        
+        display: none;
     }
-    #menu a:hover{
-        padding-bottom: 3px;
-    }
-    #submenu li{
-        float: right;
+    #submenu {
+        display: none;
     }
 
     #div1 p{
@@ -633,6 +621,9 @@ footer #footer1{
     #div6 div{
         flex-basis: 100%;
     }
+    #div6 #first{
+        padding: 50px;
+    }
     #div6 #second{
        height: 500px;
        padding: 25px;
@@ -650,18 +641,19 @@ footer #footer1{
 }
 
 @media screen and (max-width:479px){
-    
-    #menu a{
-        font-size: 10px;
+
+    header{
+        height: 70px;
     }
-    #submenu a{
-        font-size: 9px;
+    #logo img{
+        height: 32px;
     }
     #login button{
-        width: 45px;
-        height: 25px;
+        width: 65px;
+        height: 30px;
+        font-size: 11px;
     }
-
+    
     #div1{
         padding: 10px 0;
     }
@@ -709,7 +701,14 @@ footer #footer1{
         flex-direction: column;
     }
     #div4 #scope {
-        margin-bottom: 5px;
+        margin:0;
+        margin-bottom: 13px;
+    }
+    #div4 #mobile {
+        display: none;
+    }
+    #div4 #panorama{
+        display: none;
     }
 
     #div5{
@@ -725,12 +724,16 @@ footer #footer1{
     #div5 .post2{
         float: none;
         max-width:100%;
-        margin-bottom: 20px; 
+        padding: 20px; 
     }
     #div5 .post3{
         float: none;
         max-width: 100%;
-       margin-bottom: 0;
+        padding: 20px;
+    }
+    #div5 #reverse{
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     #div6  #name  {
@@ -742,9 +745,20 @@ footer #footer1{
     #div6 .checkBoxText{
         font-size: 10px;
     }
+    #div6 #first{
+        padding: 20px;
+        height: 790px;
+    }
+    
+    #div7{
+        height: 100px;
+    }
+    #div7 a {
+        font-size: 15px;
+    }
 
     #footer1 .column{
-        margin: auto;
+        margin: 0 auto;
     }
     #footer1 #profile {
         flex-direction: row;
@@ -755,4 +769,8 @@ footer #footer1{
     #footer2 a{
         font-size: 10px;
     }
+}
+
+body{
+    margin-left: 0;
 }
