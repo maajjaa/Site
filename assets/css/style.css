@@ -497,7 +497,7 @@ footer #footer1{
     background-color: #f7f7f7;
 }
  .termsIcons{
-    margin: 200px;
+    margin: 0 200px;
 }
 
 /*************
@@ -653,7 +653,7 @@ footer #footer1{
         height: 30px;
         font-size: 11px;
     }
-    
+
     #div1{
         padding: 10px 0;
     }
