@@ -537,10 +537,6 @@ footer #footer1{
         font-size: 13px;
     }
 
-    #div4 #scope{
-        margin-left: 7px;
-    }
-
     #div6 #profile a{
         font-size: 13px;
     }
@@ -603,6 +599,10 @@ footer #footer1{
     }
     #div4 #scope a{
         font-size: 9px;
+    }
+    #div4 #scope{
+        max-width: 100%;
+        
     }
 
     #div5 p{
@@ -702,7 +702,7 @@ footer #footer1{
     }
     #div4 #scope {
         margin:0;
-        margin-bottom: 13px;
+        margin-bottom: 9px;
     }
     #div4 #mobile {
         display: none;
@@ -773,4 +773,5 @@ footer #footer1{
 
 body{
     margin-left: 0;
+    margin-right: 0;
 }
