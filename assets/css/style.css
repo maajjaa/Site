@@ -152,7 +152,9 @@ header div {
     font-family: 'MuseoSans700';
     background-color: #0050ff;
 }
-
+.toggle-nav {
+    display: none;
+}
 
 /***************
 # Main
@@ -550,12 +552,56 @@ footer #footer1{
 
     header{
         height: 80px;
+        position:relative;
     }
-    #menu li{
+    #menu ul.active{
         display: none;
     }
     #submenu {
         display: none;
+    }
+    #menu ul {
+		background: #004ffb;
+		position:absolute;
+        right:0px;
+        border-radius: 5px;
+        padding:18px;
+        font-size: 15px;
+    }
+    #menu ul:after {
+        width:0px;
+        height:0px;
+        position:absolute;
+        top:0%;
+        right:3px;
+        content:'';
+        transform:translate(0%, -100%);
+        border-width: 8px;
+        border-style: solid;
+        border-color:  transparent  transparent #004ffb transparent;
+    }
+    #menu li{
+        float: none;
+        padding: 5px;
+    }
+    #menu a:hover{
+        border: none;
+        padding:none;
+        color: white;
+    }
+    .toggle-nav{
+        display:inline-block;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #004ffb;
+        background: white;
+        color: #004ffb;
+        text-decoration: none;
+        margin-left: 10px;
+        height: 44px;
+    }
+    .toggle-nav:hover {
+        color: #081f3f;
     }
 
     #div1 p{
